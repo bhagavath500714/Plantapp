@@ -99,13 +99,14 @@ class Explore extends Component {
   }
 
   renderFooter() {
+    const { navigation } = this.props;
     return (
       <LinearGradient
         locations={[0.5, 1]}
         style={styles.footer}
         colors={["rgba(255,255,255,0)", "rgba(255,255,255,0.6)"]}
       >
-        <Button gradient style={{ width: width / 2.678 }}>
+        <Button gradient style={{ width: width / 2.678 }} onPress={() => navigation.navigate("Actionbutton")}>
           <Text bold white center>
             Filter
           </Text>

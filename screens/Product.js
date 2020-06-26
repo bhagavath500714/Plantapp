@@ -48,7 +48,7 @@ class Product extends Component {
   }
 
   render() {
-    const { product } = this.props;
+    const { product, navigation } = this.props;
 
     return (
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -72,7 +72,9 @@ class Product extends Component {
           <Divider margin={[theme.sizes.padding * 0.9, 0]} />
 
           <Block>
+            <TouchableOpacity onPress={() => navigation.navigate("Basicanimate")}>
             <Text semibold>Gallery</Text>
+            </TouchableOpacity>
             <Block row margin={[theme.sizes.padding * 0.9, 0]}>
               {product.images.slice(1, 3).map((image, index) => (
                 <Image
@@ -89,7 +91,9 @@ class Product extends Component {
                 color="rgba(197,204,214,0.20)"
                 style={styles.more}
               >
+                <TouchableOpacity  onPress={() => navigation.navigate("Animate")}>
                 <Text gray>+{product.images.slice(3).length}</Text>
+                </TouchableOpacity>
               </Block>
             </Block>
           </Block>

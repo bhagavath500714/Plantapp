@@ -11,6 +11,10 @@ import Browse from '../screens/Browse';
 import Settings from '../screens/Settings';
 import Explore from '../screens/Explore';
 import Product from '../screens/Product';
+import Animate from '../screens/Animate';
+import Actionbutton from '../screens/Actionbutton';
+import FloatingButton from '../screens/FloatingButton';
+import Basicanimate from '../screens/Basicanimate';
 
 import { theme } from '../constants';
 
@@ -24,6 +28,10 @@ const screens = createStackNavigator(
     Settings,
     Explore,
     Product,
+    Animate,
+    Actionbutton,
+    FloatingButton,
+    Basicanimate,
 }, {
   defaultNavigationOptions: {
     headerStyle: {
