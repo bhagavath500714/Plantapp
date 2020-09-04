@@ -55,9 +55,16 @@ class Product extends Component {
         {this.renderGallery()}
 
         <Block style={styles.product} white>
+        <TouchableOpacity onPress={() => navigation.navigate("AirView")}>
           <Text h2 bold>
             {product.name}
           </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Fashion")}>
+          <Text h2 bold>
+            Fashion
+          </Text>
+          </TouchableOpacity>
           <Block flex={false} row margin={[theme.sizes.base, 0]}>
             {product.tags.map(tag => (
               <Text key={`tag-${tag}`} caption gray style={styles.tag}>

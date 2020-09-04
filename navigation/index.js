@@ -15,6 +15,8 @@ import Animate from '../screens/Animate';
 import Actionbutton from '../screens/Actionbutton';
 import FloatingButton from '../screens/FloatingButton';
 import Basicanimate from '../screens/Basicanimate';
+import AirView from '../screens/AirView';
+import Fashion from '../screens/Fashion';
 
 import { theme } from '../constants';
 
@@ -32,6 +34,8 @@ const screens = createStackNavigator(
     Actionbutton,
     FloatingButton,
     Basicanimate,
+    AirView,
+    Fashion
 }, {
   defaultNavigationOptions: {
     headerStyle: {
